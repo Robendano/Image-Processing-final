@@ -1,0 +1,10 @@
+b = imread('cameraman.tif');
+b2 = imdivide(b, 64);
+bb2 = immultiply(b2, 64);
+b3 = imdivide(b, 32);
+bb3 = immultiply(b2, 32);
+b4 = imdivide(b, 16);
+bb4 = immultiply(b2, 16);
+subplot(231), imshow(bb2), title('64');subplot(232), imshow(bb3), title('32'); subplot(233), imshow(bb4), title('16');
+
+The original image is not equivalent to the output because we divided the original resolution
