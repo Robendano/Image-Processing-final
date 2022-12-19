@@ -1,0 +1,13 @@
+clc
+clear all
+close all
+x=imread('peppers.png');
+figure;
+imshow(x);
+title('Original Image');
+I_sharpen=imsharpen(x,'amount',3);
+figure;
+imshow(I_sharpen);
+title('Sharpened Image');
+
+I used unsharping to do a 3x3 filter and result is better resolution than original. Yes unsharp can be use to reverse the effect of blurring
